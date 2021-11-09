@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prit Manvar</title>
+    <link rel="stylesheet" href="home.css">
+
+    <!-- Inconsolata CSS : font-family: 'Inconsolata', monospace; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap" rel="stylesheet">
+    <!-- Roboto CSS : font-family: 'Roboto', sans-serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#">01. About</a></li>
+            <li><a href="#">02. Skills</a></li>
+            <li><a href="#">03. Projects</a></li>
+            <li><a href="#">04. Achivements</a></li>
+            <li><a href="#">05. Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Right Section -->
+    <section class="right">
+        <h2><a href="mailto:pritmanvar1109@gmail.com">pritmanvar1109@gmail.com</a></h2>
+        <hr>
+    </section>
+
+    <!-- Left Section -->
+    <section class="left">
+        <a href="https://www.linkedin.com/in/prit-manvar-36ab97204/"><img src="icons/linkedin.svg" alt=""></a>
+        <a href="https://github.com/pritmanvar"><img src="icons/github.svg" alt=""></a>
+        <a href="https://www.youtube.com/channel/UCOQVrFz2DTY6PewABNS4wHA"><img src="icons/youtube.svg" alt=""></a>
+        <a href="https://twitter.com/manvar_prit"><img src="icons/twitter.svg" alt=""></a>
+        <hr>
+    </section>
+
+    <!-- Home Page -->
+    <div class="home">
+        <div class="content">
+            <h3>Hello, My name is</h3>
+            <h1>Prit Manvar</h1>
+            <h2>I'm a <span class="role"></span></h2>
+        </div>
+        <!-- For Background Animation -->
+        <div class="box1 box"></div>
+        <div class="box2 box"></div>
+        <div class="box3 box"></div>
+        <div class="box4 box"></div>
+        <div class="box5 box"></div>
+    </div>
+
+    <!-- Script for changing text -->
+    <script src="home.js"></script>
+
+    <!-- CDN for the content is following mouse pointer -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Script for the content is following mouse pointer -->
+    <script>
+        document.addEventListener("mousemove",e=>{
+            gsap.to(".content",{
+                x : e.clientX,
+                y : e.clientY,
+                stagger: -0.5
+            })
+        })
+    </script>
+</body>
+</html>

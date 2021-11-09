@@ -1,0 +1,169 @@
+body{
+    background-color: #061320;
+    margin: 0;
+    padding: 0%;
+}
+/* Navigation Bar */
+nav{
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    top: 0%;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 1;
+    background-color: #061320;
+}
+ul{
+    width: 75%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 2%;
+}
+ul a{
+    text-decoration: none;
+    font-family: 'Inconsolata', monospace;
+    color: #D6E2DE;
+    transition: 0.1s all;
+}
+ul a:hover{
+    color: #36FBB1;
+    font-size: 17px;
+}
+ul li{
+    list-style: none;
+    padding: 0 2%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* for left and right section */
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    top: 10vh;
+    width: 10%;
+    height: 90vh;
+    z-index: 1;
+}
+
+/* Right Section */
+.right{
+    font-family: 'Inconsolata', monospace;
+    color: #36FBB1;
+    right: 0;
+}
+.right h2{
+    position: relative;
+    bottom: 110px;
+    transform: rotate(90deg);
+}
+.right h2 a{
+    text-decoration: none;
+    color: #36FBB1;
+    transition: 0.1s font-size;
+}
+.right h2 a:hover{
+    font-size: 25px;
+}
+section hr{
+    height: 25%;
+    border-color: #E7E9E9;
+}
+
+/* Left section */
+.left img{
+    height: 30px;
+    width: 30px;
+    padding: 30% 0;
+    transition: 0.5s linear;
+    border-radius: 50%;
+}
+.left a:hover img{
+    transform: rotate(360deg);
+}
+
+/* Home Page */
+.home{
+    height: 90vh;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10vh;
+    overflow: hidden;
+}
+.content *{
+    margin: 0%;
+}
+.content{
+    transform: translate(-50%,-50%);
+}
+.content h3{
+    font-family: 'Inconsolata', monospace;
+    color: #F14B4B;
+    font-size: 1rem;
+}
+.content h1{
+    font-family: 'Roboto', sans-serif;
+    color: #E7E9E9;
+    font-size: 8rem;
+}
+.content h2{
+    font-family: 'Roboto', sans-serif;
+    color: #BAC3CF;
+    font-size: 2rem;
+}
+.role{
+    font-family: 'Inconsolata', monospace;
+    color: #F14B4B;
+    border-right: 3px solid #F14B4B;
+}
+
+/* Background Animation */
+.box{
+    position: absolute;
+    bottom: 0%;
+    background-color: rgba(55 83 110 / 30%);
+    box-shadow: 0 0 10px 0 rgba( 31, 38, 135, 0.5 );
+    border: 1px solid rgba( 255, 255, 255, 0.3 );
+    height: 100px;
+    width: 100px;
+    z-index: -1;
+}
+.box1{
+    left: 7%;
+    animation: bgAnimate 3.5s linear 0s infinite;
+}
+.box2{
+    left: 27%;
+    animation: bgAnimate 3s linear 0s infinite;
+}
+.box3{
+    left: 47%;
+    animation: bgAnimate 2.5s linear 0s infinite;
+}
+.box4{
+    left: 67%;
+    animation: bgAnimate 3s linear 0s infinite;
+}
+.box5{
+    left: 87%;
+    animation: bgAnimate 3.5s linear 0s infinite;
+}
+@keyframes bgAnimate{
+    0%{
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+    100%{
+        opacity: 0;
+        bottom: 100%;
+        height: 20px;
+        width: 20px;
+        transform: rotate(360deg);
+    }
+}
