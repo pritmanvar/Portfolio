@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    min-height: 90vh;
     width: 80%;
     margin: 0 auto;
     margin-top: 10vh;
