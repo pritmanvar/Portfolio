@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prit Manvar</title>
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="CSS/general.css">
+    <link rel="stylesheet" href="CSS/home.css">
+    <link rel="stylesheet" href="CSS/about.css">
 
     <!-- Inconsolata CSS : font-family: 'Inconsolata', monospace; -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,11 +24,11 @@
     <!-- Navigation Bar -->
     <nav>
         <ul>
-            <li><a href="#">01. About</a></li>
-            <li><a href="#">02. Skills</a></li>
-            <li><a href="#">03. Projects</a></li>
-            <li><a href="#">04. Achivements</a></li>
-            <li><a href="#">05. Contact</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Achivements</a></li>
+            <li><a href="#">Contact</a></li>
         </ul>
     </nav>
 
@@ -50,7 +52,8 @@
         <div class="content">
             <h3>Hello, My name is</h3>
             <h1>Prit Manvar</h1>
-            <h2>I'm a <span class="role"></span></h2>
+            <h2>I'm a <span class="role" data-wait="1000"
+                    data-words='["Web Developer.","Competitive Programmer.","Passionate Learner."]'></span></h2>
         </div>
         <!-- For Background Animation -->
         <div class="box1 box"></div>
@@ -60,20 +63,25 @@
         <div class="box5 box"></div>
     </div>
 
+    <!-- About Page -->
+    <div class="about" id="About">
+        <div class="aboutText">
+            <div class="heading">
+                <h2>Prit Manvar</h2>
+                <h3>I love exploring new things!</h3>
+            </div>
+            <p>I'm a Second Year Computer Science Engineering Student at <a href="https://www.vgecg.ac.in/" target="_blank">Vishwakarma Government Engineering College</a>, Ahmedabad with current <span>9.00 CPI.</span> I am primarily interested in <span>Competitive Programming</span>, <span>Data Structures and Algorithms</span>, <span>Web Development.</span></p>
+            <p>I enjoy learning new skills and implementing them in real life!<br>
+                I am a believer of peer learning and always ready to share my knowledge.</p>
+            <a href="mailto:pritmanvar1109@gmail.com"><button >Let's Talk</button></a>
+        </div>
+        <div class="img">
+            <img src="./images/ProfilePic.png" alt="Picture of Prit Manvar">
+        </div>
+    </div>
+
     <!-- Script for changing text -->
     <script src="home.js"></script>
-
-    <!-- CDN for the content is following mouse pointer -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- Script for the content is following mouse pointer -->
-    <script>
-        document.addEventListener("mousemove",e=>{
-            gsap.to(".content",{
-                x : e.clientX,
-                y : e.clientY,
-                stagger: -0.5
-            })
-        })
-    </script>
 </body>
+
 </html>

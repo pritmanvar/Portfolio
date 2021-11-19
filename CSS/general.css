@@ -1,0 +1,93 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #061320;
+    margin: 0;
+    padding: 0%;
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #36FBB1;
+    font-family: 'Inconsolata', monospace;
+}
+/* Navigation Bar */
+nav{
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    top: 0%;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 2;
+    background-color: #061320;
+}
+ul{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+}
+ul a{
+    color: #D6E2DE;
+    transition: 0.1s all;
+}
+ul a:hover{
+    color: #36FBB1;
+}
+ul li{
+    list-style: none;
+    padding: 0 2%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* for left and right section */
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    top: 10vh;
+    width: 10%;
+    height: 90vh;
+    z-index: 1;
+}
+
+/* Right Section */
+.right{
+    color: #36FBB1;
+    right: 0;
+}
+.right h2{
+    position: relative;
+    bottom: 110px;
+    transform: rotate(90deg);
+}
+.right h2 a{
+    transition: 0.1s font-size;
+    margin-right: 25px;
+}
+.right h2 a:hover{
+    font-size: 25px;
+}
+section hr{
+    height: 25%;
+    margin: 0;
+    border-color: #E7E9E9;
+}
+
+/* Left section */
+.left img{
+    height: 30px;
+    width: 30px;
+    padding: 30% 0;
+    transition: 0.5s linear;
+    border-radius: 50%;
+}
+.left a:hover img{
+    transform: rotate(360deg);
+}

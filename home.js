@@ -1,41 +1,56 @@
-const role = document.querySelector('.role'); // get reference to the text
+const TypeWriter = function(txtElement, words, wait = 3000){
+    this.txtElement = txtElement;
+    this.words = words;
+    this.txt = "";
+    this.wordIndex = 0;
+    this.wait = parseInt(wait,10);
+    this.type();
+    this.isDeleting = false;
+}
 
-// various roles.
-let roles = ["Web Developer.", "Competitive Programmer.", "Tech Enthsiast."]
+// Type Method
+TypeWriter.prototype.type = function(){
+    // Current Index of Word 
+    const current = this.wordIndex % this.words.length;
+    const fulltxt = this.words[current];
+    
+    // check if deleting
+    if(this.isDeleting){
+        // remove a char
+        this.txt = fulltxt.substring(0,this.txt.length-1);
+    }else{
+        // add a char
+        this.txt = fulltxt.substring(0,this.txt.length+1);
+    }
+    
+    // Insert txt into element
+    this.txtElement.innerHTML = '<span class = "txt">' + this.txt + '</span>';
+    
+    // Initial Type Speed
+    let typeSpeed = 150;
+    if(this.isDeleting){
+        typeSpeed /= 2;
+    }
 
-write(0); // to write Web Developer
-setTimeout(() => { // to write Competitive Programmer
-    write(1);
-}, 3000);
-setTimeout(() => { // to write Tech Enthsiast
-    write(2);
-}, 7800);
+    // If word is complete
+    if(!this.isDeleting && this.txt === fulltxt){
+        typeSpeed = this.wait; // to make a pause at end
+        this.isDeleting = true;
+    }else if(this.isDeleting && this.txt === ''){
+        this.isDeleting = false;
+        this.wordIndex++;
+        typeSpeed = 100;
+    }
 
-// it will write all roles at particular time interval.
-setInterval(() => {
-    write(0);
-    setTimeout(() => {
-        write(1);
-    }, 3000);
-    setTimeout(() => {
-        write(2);
-    }, 7800);
-}, 11000 );
+    setTimeout(()=>this.type(),typeSpeed);
+}
 
-// function to write and erase roles.
-function write(i) {
-    let j = 0;
-    let increase = true;
-    let word = setInterval(() => {
-        if(j < roles[i].length && increase == true){ // to write role
-            role.innerHTML = roles[i].substr(0,j+1);
-            j++;
-        }else if(j >= 0){ // to erase role
-            increase = false;
-            role.innerHTML = roles[i].substr(0,j);
-            j--;
-        }else{ // to clear time interval.
-            clearInterval(word);
-        }
-    }, 100);
+// init typeWriter
+window.onload = function(){
+    const txtElement = document.querySelector(".role");
+    const words = JSON.parse(txtElement.getAttribute('data-words'));
+    const wait = txtElement.getAttribute('data-wait');
+
+    // Init TypeWriter
+    new TypeWriter(txtElement,words,wait);
 }

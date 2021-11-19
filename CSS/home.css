@@ -1,0 +1,76 @@
+/* Home Page */
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10vh;
+}
+.content *{
+    margin: 0%;
+}
+.content h3{
+    font-family: 'Inconsolata', monospace;
+    color: #F14B4B;
+    font-size: 1rem;
+}
+.content h1{
+    color: #E7E9E9;
+    font-size: 8rem;
+}
+.content h2{
+    color: #BAC3CF;
+    font-size: 2rem;
+}
+.role{
+    font-family: 'Inconsolata', monospace;
+    color: #F14B4B;
+    border-right: 3px solid #F14B4B;
+}
+
+/* Background Animation */
+.box{
+    position: absolute;
+    bottom: 0%;
+    background-color: rgba(55 83 110 / 30%);
+    box-shadow: 0 0 10px 0 rgba( 31, 38, 135, 0.5 );
+    border: 1px solid rgba( 255, 255, 255, 0.3 );
+    height: 100px;
+    width: 100px;
+    z-index: -1;
+}
+.box1{
+    left: 7%;
+    animation: bgAnimate 3.5s linear 0s infinite;
+}
+.box2{
+    left: 27%;
+    animation: bgAnimate 3s linear 0s infinite;
+}
+.box3{
+    left: 47%;
+    animation: bgAnimate 2.5s linear 0s infinite;
+}
+.box4{
+    left: 67%;
+    animation: bgAnimate 3s linear 0s infinite;
+}
+.box5{
+    left: 87%;
+    animation: bgAnimate 3.5s linear 0s infinite;
+}
+@keyframes bgAnimate{
+    0%{
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+    100%{
+        opacity: 0;
+        bottom: 100%;
+        height: 20px;
+        width: 20px;
+        transform: rotate(360deg);
+    }
+}
