@@ -73,7 +73,7 @@
     transition: 0.5s all linear;
 }
 .img:hover{
-    filter: blur(0px) grayscale(0) drop-shadow(5px 5px 5px #36FBB150);
+    filter: blur(0px) grayscale(0) drop-shadow(10px 10px 15px black);
 }
 .img:hover > img{
     height: 110%;

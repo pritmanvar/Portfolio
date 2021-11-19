@@ -1,0 +1,53 @@
+.projects hr{
+    margin: 0;
+    width: 70%;
+}
+.healer{
+    width: 90%;
+    display: flex;
+}
+.healer img{
+    aspect-ratio: 194/100;
+    width: 60%;
+}
+.healerText{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    right: 5%;
+    z-index: 1;
+}
+.healerText h2{
+    font-size: 3rem;
+    font-weight: 500;
+    color: #BAC3CF;
+    margin: 0 0 20px 0;
+}
+.healerDetails{
+    height: 40%;
+    width: 100%;
+    background: #03274A;
+    box-shadow: 10px 10px 25px black;
+    text-align: center;
+    color: #BAC3CF;
+}
+.healerDetails span{
+    color: #e7e9e9;
+}
+.healerText>p span{
+    color: #F14B4B;
+    font-family: 'Inconsolata', monospace;
+    padding: 0 10px;
+}
+.platforms img{
+    height: 2rem;
+}
+.platforms img:hover{
+    position: relative;
+    top: 2px;
+}
+.platforms a{
+    display: inline-block;
+}
