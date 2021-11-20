@@ -11,6 +11,10 @@
 .content *{
     margin: 0%;
 }
+.content div{
+    min-width: 660px;
+    min-height: 150px;
+}
 .content h3{
     font-family: 'Inconsolata', monospace;
     color: #F14B4B;
@@ -19,6 +23,35 @@
 .content h1{
     color: #E7E9E9;
     font-size: 8rem;
+    visibility: hidden;
+    animation: removeHide 0.1s ease-out 0.7s 1 forwards;
+}
+@keyframes removeHide{
+    100%{
+        visibility: visible;
+    }
+}
+.content div::before{
+    content: '';
+    position: absolute;
+    height: 150px;
+    width: 660px;
+    background: linear-gradient( to right, #F14B4B 50%, #00000000 50%);
+    background-size: 1320px;
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+    animation: name 1.5s ease-out 0s 1 forwards;
+}
+@keyframes name{
+    0%{
+        background-position: -100%;
+    }
+    50%,70%{
+        background-position: 0;
+    }
+    100%{
+        background-position: 100%;
+    }
 }
 .content h2{
     color: #BAC3CF;
