@@ -1,0 +1,10 @@
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #BAC3CF;
+    height: 10vh;
+}
+footer span{
+    border-right: 1px solid #BAC3CF;
+}

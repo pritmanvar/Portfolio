@@ -44,12 +44,18 @@ nav{
     position: fixed;
     top: 0%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
     z-index: 2;
     background-color: #061320;
 }
+nav img{
+    aspect-ratio: 1/1;
+    height: 45px;
+    margin-left: 20px;
+}
 ul{
-    width: 50%;
+    width: 40%;
     display: flex;
     justify-content: space-evenly;
     padding: 0;
@@ -106,13 +112,43 @@ section hr{
 }
 
 /* Left section */
-.left img{
+.socials img{
     height: 30px;
     width: 30px;
-    padding: 30% 0;
     transition: 0.5s linear;
     border-radius: 50%;
 }
-.left a:hover img{
+.left img{
+    padding: 30% 0;
+}
+.socials a:hover img{
     transform: rotate(360deg);
+}
+
+/* Buttons */
+button{
+    position: relative;
+    display: block;
+    min-width: 130px;
+    height: 40px;
+    margin: 0 auto;
+    color: #36FBB1;
+    border: 1px solid #36FBB1;
+    border-radius: 50px;
+    background-color: #36FBB125;
+    padding: 5px 10px;
+    font-weight: 500;
+    font-size: 1rem;
+    font-family: 'Inconsolata', monospace;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    box-shadow: 0 3px 2px #36FBB1;
+}
+button:hover {
+    box-shadow: 0 2px 2px #36FBB1;
+    top: 1px;
+}
+button:active {
+    box-shadow: 0 0 #36FBB1;
+    top: 3px;
 }

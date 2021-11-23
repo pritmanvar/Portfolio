@@ -27,32 +27,6 @@
     color: #E7E9E9;
     font-weight: 500;
 }
-.aboutText button{
-    position: relative;
-    display: block;
-    min-width: 130px;
-    height: 40px;
-    margin: 0 auto;
-    color: #36FBB1;
-    border: 1px solid #36FBB1;
-    border-radius: 50px;
-    background-color: #36FBB125;
-    padding: 5px 10px;
-    font-weight: 500;
-    font-size: 1rem;
-    font-family: 'Inconsolata', monospace;
-    cursor: pointer;
-    transition: all 0.2s linear;
-    box-shadow: 0 3px 2px #36FBB1;
-}
-.aboutText button:hover {
-    box-shadow: 0 2px 2px #36FBB1;
-    top: 1px;
-}
-.aboutText button:active {
-    box-shadow: 0 0 #36FBB1;
-    top: 3px;
-}
 .img{
     width: 30%;
     aspect-ratio: 1/1;

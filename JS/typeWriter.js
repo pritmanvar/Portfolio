@@ -1,4 +1,4 @@
-const TypeWriter = function(txtElement, words, wait = 3000){
+const TypeWriter = function(txtElement, words, wait){
     this.txtElement = txtElement;
     this.words = words;
     this.txt = "";
@@ -27,11 +27,11 @@ TypeWriter.prototype.type = function(){
     this.txtElement.innerHTML = '<span class = "txt">' + this.txt + '</span>';
     
     // Initial Type Speed
-    let typeSpeed = 150;
+    let typeSpeed = 100;
     if(this.isDeleting){
         typeSpeed /= 2;
     }
-
+    
     // If word is complete
     if(!this.isDeleting && this.txt === fulltxt){
         typeSpeed = this.wait; // to make a pause at end
@@ -39,18 +39,25 @@ TypeWriter.prototype.type = function(){
     }else if(this.isDeleting && this.txt === ''){
         this.isDeleting = false;
         this.wordIndex++;
-        typeSpeed = 100;
     }
-
+    
     setTimeout(()=>this.type(),typeSpeed);
 }
 
 // init typeWriter
 window.onload = function(){
+    // TypeWriter fore roles.
     const txtElement = document.querySelector(".role");
     const words = JSON.parse(txtElement.getAttribute('data-words'));
     const wait = txtElement.getAttribute('data-wait');
-
     // Init TypeWriter
     new TypeWriter(txtElement,words,wait);
+    
+    
+    // TypeWriter fore Footer.
+    const txtElementFooter = document.querySelector(".footer");
+    const wordsFooter = JSON.parse(txtElementFooter.getAttribute('data-words'));
+    const waitFooter = txtElementFooter.getAttribute('data-wait');
+    // Init TypeWriter
+    new TypeWriter(txtElementFooter,wordsFooter,waitFooter);
 }

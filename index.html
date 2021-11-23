@@ -6,11 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prit Manvar</title>
+    <link rel="shortcut icon" href="./Logo.svg" type="image/x-icon">
+    
+    <!-- CSS Files -->
     <link rel="stylesheet" href="CSS/general.css">
     <link rel="stylesheet" href="CSS/home.css">
     <link rel="stylesheet" href="CSS/about.css">
     <link rel="stylesheet" href="CSS/skills.css">
     <link rel="stylesheet" href="CSS/Projects.css">
+    <link rel="stylesheet" href="CSS/contact.css">
+    <link rel="stylesheet" href="CSS/footer.css">
 
     <!-- Inconsolata CSS : font-family: 'Inconsolata', monospace; -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,12 +30,12 @@
 <body>
     <!-- Navigation Bar -->
     <nav>
+        <a href="#"><img src="./Logo.svg" alt=""></a>
         <ul>
             <li><a href="#About">About</a></li>
             <li><a href="#Skills">Skills</a></li>
             <li><a href="#Projects">Projects</a></li>
-            <li><a href="#">Achivements</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#Contact">Contact</a></li>
         </ul>
     </nav>
 
@@ -41,11 +46,12 @@
     </section>
 
     <!-- Left Section -->
-    <section class="left">
-        <a href="https://www.linkedin.com/in/prit-manvar-36ab97204/"><img src="icons/linkedin.svg" alt=""></a>
-        <a href="https://github.com/pritmanvar"><img src="icons/github.svg" alt=""></a>
-        <a href="https://www.youtube.com/channel/UCOQVrFz2DTY6PewABNS4wHA"><img src="icons/youtube.svg" alt=""></a>
-        <a href="https://twitter.com/manvar_prit"><img src="icons/twitter.svg" alt=""></a>
+    <section class="left socials">
+        <a href="https://www.linkedin.com/in/prit-manvar-36ab97204/"><img src="icons/linkedin.svg" alt="LinkedIn"></a>
+        <a href="https://github.com/pritmanvar"><img src="icons/github.svg" alt="GitHub"></a>
+        <a href="https://www.youtube.com/channel/UCOQVrFz2DTY6PewABNS4wHA"><img src="icons/youtube.svg"
+                alt="YouTube"></a>
+        <a href="https://twitter.com/manvar_prit"><img src="icons/twitter.svg" alt="Twitter"></a>
         <hr>
     </section>
 
@@ -53,9 +59,12 @@
     <div class="home">
         <div class="content">
             <h3>Hello, My name is</h3>
-            <div><h1>Prit Manvar</h1></div>
+            <div>
+                <h1>Prit Manvar</h1>
+            </div>
             <h2>I'm a <span class="role" data-wait="1000"
-                    data-words='["Web Developer.","Competitive Programmer.","Passionate Learner."]'></span></h2>
+                    data-words='["Web Developer.","Competitive Programmer.","Passionate Learner."]'
+                    data-wait='3000'></span></h2>
         </div>
         <!-- For Background Animation -->
         <div class="box1 box"></div>
@@ -77,17 +86,20 @@
                     <h2>Prit Manvar</h2>
                     <h3>I love exploring new things!</h3>
                 </div>
-                <p>I'm a Second Year Computer Science Engineering Student at <a href="https://www.vgecg.ac.in/" target="_blank">Vishwakarma Government Engineering College</a>, Ahmedabad with current <span>9.00 CPI.</span> I am primarily interested in <span>Competitive Programming</span>, <span>Data Structures and Algorithms</span>, <span>Web Development.</span></p>
+                <p>I'm a Second Year Computer Science Engineering Student at <a href="https://www.vgecg.ac.in/"
+                        target="_blank">Vishwakarma Government Engineering College</a>, Ahmedabad with current
+                    <span>9.00 CPI.</span> I am primarily interested in <span>Competitive Programming</span>, <span>Data
+                        Structures and Algorithms</span>, <span>Web Development.</span>
+                </p>
                 <p>I enjoy learning new skills and implementing them in real life!<br>
                     I am a believer of peer learning and always ready to share my knowledge.</p>
-                    <a href="mailto:pritmanvar1109@gmail.com"><button >Let's Talk</button></a>
-                </div>
+                <a href="mailto:pritmanvar1109@gmail.com"><button>Let's Talk</button></a>
+            </div>
             <div class="img">
                 <img src="./images/ProfilePic.png" alt="Picture of Prit Manvar">
             </div>
         </div>
     </div>
-    
     <!-- Skills Page -->
     <div class="skills part" id="Skills">
         <div class="title">
@@ -96,7 +108,8 @@
         </div>
         <div class="wrap">
             <div class="skillsText">
-                <p>An individual eager to learn and explore new fields of life and technology, with good listening skills and fast learning abilities.</p>
+                <p>An individual eager to learn and explore new fields of life and technology, with good listening
+                    skills and fast learning abilities.</p>
                 <div class="interest">
                     <h3>Interest</h3>
                     <div>
@@ -109,31 +122,31 @@
             <div class="skillIteams">
                 <div class="iteam iteam1">
                     <div class="iteamCircle">
-                        <img src="./icons/c.svg" alt="">
+                        <img src="./icons/c.svg" alt=" C Language">
                     </div>
                     <p>C Language</p>
                 </div>
                 <div class="iteam iteam2">
                     <div class="iteamCircle">
-                        <img src="./icons/cpp.svg" alt="">
+                        <img src="./icons/cpp.svg" alt="C++ Language">
                     </div>
                     <p>C++ Language</p>
                 </div>
                 <div class="iteam iteam3">
                     <div class="iteamCircle">
-                        <img src="./icons/javascript.svg" alt="">
+                        <img src="./icons/javascript.svg" alt="JavaScript">
                     </div>
                     <p>JavaScript</p>
                 </div>
                 <div class="iteam iteam4">
                     <div class="iteamCircle">
-                        <img src="./icons/html5.svg" alt="">
+                        <img src="./icons/html5.svg" alt="HTML5">
                     </div>
                     <p>HTML5</p>
                 </div>
                 <div class="iteam iteam5">
                     <div class="iteamCircle">
-                        <img src="./icons/css3.svg" alt="">
+                        <img src="./icons/css3.svg" alt="CSS3">
                     </div>
                     <p>CSS3</p>
                 </div>
@@ -148,28 +161,55 @@
         </div>
         <div class="wrap">
             <div class="healer">
-                <img src="./images/project-healer.png" alt="">
+                <img src="./images/project-healer.png" alt="Image of Project">
                 <div class="healerText">
                     <h2>Healer</h2>
                     <div class="healerDetails">
-                        <p>This team project was build during the <a href="https://hacknitr.tech/" target="_blank">HackNITR 3.0</a><br>
-                            It is about mental health. Which contains various sections like <span>meditation</span>, <span>workout</span> and <span>Moodify</span> and also it gives some features like <span>Breathing Interface</span>, <span>Mandala Art</span> and <span>Color Game</span>.</p>
+                        <p>This was a team project. Which was build during the <a href="https://hacknitr.tech/"
+                                target="_blank">HackNITR 3.0</a><br>
+                            it is about mental health. Which contains various sections like
+                            <span>meditation</span>,<span>workout</span> and <span>Moodify</span> and also it gives some
+                            features like <span>Breathing Interface</span>, <span>Mandala Art</span> and <span>Color
+                                Game</span>.
+                        </p>
                     </div>
                     <p><span>HTML5</span> <span>CSS3</span> <span>JavaScript</span></p>
                     <div class="platforms">
-                        <a href=""><img src="./icons/github-project.svg" alt=""></a>
-                        <a href=""><img src="./icons/link.svg" alt=""></a>
+                        <a href=""><img src="./icons/github-project.svg" alt="Link for githu repo"></a>
+                        <a href=""><img src="./icons/link.svg" alt="Link for project"></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- Contact Me -->
+    <div class="contact part" id="Contact">
+        <div class="title">
+            <h1>Contact</h1>
+            <hr>
+        </div>
+        <div class="wrap">
+            <h3>My inbox and social medias are always open. Whether you have a question or just want to say hello, I
+                will try my best to get back to you! Feel free to contact me about any relevant opportunity or just a
+                simple talk.</h3>
+            <a href="mailto:pritmanvar1109@gmail.com"><button>Mail Me</button></a>
+            <div class="socials">
+                <a href="https://www.linkedin.com/in/prit-manvar-36ab97204/"><img src="icons/linkedin.svg" alt="LinkedIn"></a>
+                <a href="https://github.com/pritmanvar"><img src="icons/github.svg" alt="GitHub"></a>
+                <a href="https://www.youtube.com/channel/UCOQVrFz2DTY6PewABNS4wHA"><img src="icons/youtube.svg"
+                        alt="YouTube"></a>
+                <a href="https://twitter.com/manvar_prit"><img src="icons/twitter.svg" alt="Twitter"></a>
+            </div>
+        </div>
+        <footer>
+            <span class="footer" data-wait="500"
+                data-words='["I love to code.","Creating better version of mine!!","Searching for opportunities.","Learning..."]'></span>
+        </footer>
+    </div>
 
-    
     <!-- Script for changing text -->
-    <script src="home.js"></script>
-
-    <script src="nav.js"></script>
+    <script src="./JS/typeWriter.js"></script>
+    <script src="./JS/nav.js"></script>
 </body>
 
 </html>

@@ -24,7 +24,7 @@
     color: #E7E9E9;
     font-size: 8rem;
     visibility: hidden;
-    animation: removeHide 0.1s ease-out 0.7s 1 forwards;
+    animation: removeHide 0s ease-out 0.8s 1 forwards;
 }
 @keyframes removeHide{
     100%{
