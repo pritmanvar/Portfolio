@@ -1,16 +1,22 @@
+.projects .wrap{
+    flex-direction: column;
+}
+.projects .wrap > *{
+    padding: 20px 0;
+}
 .projects hr{
     margin: 0;
     width: 70%;
 }
-.healer{
-    width: 90%;
+.projectDetails{
+    width: 95%;
     display: flex;
 }
-.healer img{
+.projectDetails img{
     aspect-ratio: 194/100;
     width: 60%;
 }
-.healerText{
+.projectText{
     position: relative;
     display: flex;
     flex-direction: column;
@@ -19,24 +25,31 @@
     right: 5%;
     z-index: 1;
 }
-.healerText h2{
+.projectText h2{
     font-size: 3rem;
     font-weight: 500;
+    text-align: right;
     color: #BAC3CF;
     margin: 0 0 20px 0;
 }
-.healerDetails{
+.details{
     height: 45%;
     width: 100%;
+    display: flex;
+    align-items: center;
     background: #03274A;
     box-shadow: 10px 10px 25px black;
     text-align: center;
     color: #BAC3CF;
 }
-.healerDetails span{
+.details p{
+    margin: 0;
+    padding: 0 5px;
+}
+.details span{
     color: #e7e9e9;
 }
-.healerText>p span{
+.projectText>p span{
     color: #F14B4B;
     font-family: 'Inconsolata', monospace;
     padding: 0 10px;
@@ -49,5 +62,21 @@
     top: 2px;
 }
 .platforms a{
-    display: inline-block;
+    display: inline-block;   
+}
+@media only screen and (max-width: 1024px) {
+    .projectDetails{
+        width: 100%;
+    }
+    .details{
+        height: 50%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .projectDetails{
+        display: none;
+    }
+    .details{
+        height: 50%;
+    }
 }

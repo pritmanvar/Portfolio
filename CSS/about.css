@@ -1,6 +1,6 @@
 .about hr{
     margin: 0;
-    width: 65%;
+    width: 63%;
 }
 .aboutText{
     width: 50%;
@@ -51,4 +51,14 @@
 }
 .img:hover > img{
     height: 110%;
+}
+@media only screen and (max-width: 1200px) {
+    .about hr{
+        width: 57%;
+    }
+}
+@media only screen and (max-width: 850px) {
+    .about hr{
+        width: 43%;
+    }
 }

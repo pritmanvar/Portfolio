@@ -31,6 +31,10 @@
         visibility: visible;
     }
 }
+.content h2{
+    color: #BAC3CF;
+    font-size: 2rem;
+}
 .content div::before{
     content: '';
     position: absolute;
@@ -52,10 +56,6 @@
     100%{
         background-position: 100%;
     }
-}
-.content h2{
-    color: #BAC3CF;
-    font-size: 2rem;
 }
 .role{
     font-family: 'Inconsolata', monospace;
@@ -105,5 +105,27 @@
         height: 20px;
         width: 20px;
         transform: rotate(360deg);
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .content h1{
+        font-size: 7rem;
+    }
+    .content h2{
+        font-size: 1.5rem;
+    }
+    .content div{
+        min-width: 600px;
+    }
+    .content div::before{
+        width: 600px;
+        background-size: 1200px;
+    }
+    .box1{
+        left: 10%;
+    }
+    .box5{
+        left: 85%;
     }
 }
