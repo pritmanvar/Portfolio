@@ -1,21 +1,27 @@
+.skills .wrap{
+    display: grid;
+    grid-template-areas: 'text iteams'
+                         'interest iteams';
+    align-items: center;
+    padding: 0px 50px;
+}
 .skills hr{
     margin: 0;
     width: 80%;
 }
-.skillsText{
-    width: 50%;
-}
-.skillsText > p{
+.skills .wrap > p{
+    grid-area: text;
+    width: 75%;
+    text-align: center;
     color: #BAC3CF;
     font-size: 1.4rem
 }
-.interest *{
-    margin: 0;
-}
 .interest{
-    width: 90%;
+    grid-area: interest;
+    width: 75%;
     min-height: 17vh;
     padding: 10px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -26,18 +32,24 @@
     color: #F14B4B;
     text-align: center;
 }
+.interest *{
+    margin: 0;
+}
 .interest h3{
     font-size: 2rem;
 }
 .skillIteams{
+    grid-area: iteams;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(3, auto);
     align-items: center;
+    width: 90%;
+    margin: 0 auto;
 }
 .iteamCircle{
     background-color: #F14B4B;
-    height: 100px;
+    height: 80px;
     aspect-ratio: 1/1;
     margin: 0 auto 5px auto;
     display: flex;
@@ -79,4 +91,48 @@
 .iteam5{
     grid-column: 3;
     grid-row: 3;
+}
+@media only screen and (max-width: 850px) {
+    .skills .wrap{
+        padding: 0 20px;
+    }
+    .skills .wrap > p{
+        width: 100%;
+    }
+    .interest{
+        width: 90%;
+    }
+    .iteamCircle{
+        height: 70px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .skills .wrap{
+        grid-template-areas: 'text' 'iteams' 'interest';
+    }
+    .interest{
+        width: 75%;
+    }
+    .skillIteams{
+        grid-template-areas: 'iteam4 . iteam5 . iteam3'
+                             '. iteam1 . iteam2 .';
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    .iteam1{
+        grid-area: iteam1;
+        justify-self: end;
+    }
+    .iteam2{
+        grid-area: iteam2;
+        justify-self: start;
+    }
+    .iteam3{
+        grid-area: iteam3;
+    }
+    .iteam4{
+        grid-area: iteam4;
+    }
+    .iteam5{
+        grid-area: iteam5;
+    }
 }

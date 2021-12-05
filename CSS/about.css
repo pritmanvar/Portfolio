@@ -57,8 +57,28 @@
         width: 57%;
     }
 }
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 1010px) {
     .about hr{
-        width: 43%;
+        width: 49%;
+    }
+}
+@media only screen and (max-width: 850px) {
+    .img{
+        width: 40%;
+    }
+    .about h2{
+        font-size: 2.5rem;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .about hr{
+        width: 41%;
+    }
+    .about h2{
+        font-size: 2rem;
+    }
+    .img{
+        width: 40%;
+        filter: blur(0px) grayscale(0) drop-shadow(10px 10px 15px black);
     }
 }

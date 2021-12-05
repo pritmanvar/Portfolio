@@ -1,9 +1,6 @@
 .projects .wrap{
     flex-direction: column;
 }
-.projects .wrap > *{
-    padding: 20px 0;
-}
 .projects hr{
     margin: 0;
     width: 70%;
@@ -11,6 +8,7 @@
 .projectDetails{
     width: 95%;
     display: flex;
+    margin: 20px 0;
 }
 .projectDetails img{
     aspect-ratio: 194/100;
@@ -20,8 +18,8 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: flex-end;
-    justify-content: flex-end;
     right: 5%;
     z-index: 1;
 }
@@ -44,7 +42,7 @@
 }
 .details p{
     margin: 0;
-    padding: 0 5px;
+    padding: 0 10px;
 }
 .details span{
     color: #e7e9e9;
@@ -52,7 +50,7 @@
 .projectText>p span{
     color: #F14B4B;
     font-family: 'Inconsolata', monospace;
-    padding: 0 10px;
+    padding-left: 20px;
 }
 .platforms img{
     height: 2rem;
@@ -74,9 +72,48 @@
 }
 @media only screen and (max-width: 768px) {
     .projectDetails{
-        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        background-color: #0B1E31;
+        border-radius: 20px;
+    }
+    .projectDetails > img{
+        width: 95%;
+        margin-top: 10px;
+        border-radius: 10px;
+    }
+    .projectText{
+        right: 0%;
+        display: grid;
+        grid-template-areas: 'heading heading tech tech tech'
+                             'heading heading link link link'
+                             'details details details details details';
+    }
+    .projectText > h2{
+        grid-area: heading;
+        text-align: left;
+        padding-left: 10px;
+    }
+    .projectText > p{
+        grid-area: tech;
+        text-align: right;
+        margin: 0%;
+        padding-right: 10px;
+    }
+    .platforms{
+        grid-area: link;
+        text-align: right;
+        margin-bottom: 10px;
+        padding-right: 10px;
     }
     .details{
-        height: 50%;
+        grid-area: details;
+        background-color: #00000000;
+        box-shadow: 0 0 0;
+    }
+    .details{
+        height: 110%;
+        margin-bottom: 10px;
     }
 }
