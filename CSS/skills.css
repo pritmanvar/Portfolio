@@ -118,6 +118,7 @@
         grid-template-areas: 'iteam4 . iteam5 . iteam3'
                              '. iteam1 . iteam2 .';
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        margin-top: 20px;
     }
     .iteam1{
         grid-area: iteam1;
