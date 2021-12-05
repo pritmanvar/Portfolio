@@ -23,3 +23,19 @@
     justify-content: space-around;
     width: 25%;
 }
+@media only screen and (max-width: 600px) {
+    .contact h3{
+        width: 80%;
+    }
+    .contact .socials{
+        width: 30%;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .contact h3{
+        width: 90%;
+    }
+    .contact .socials{
+        width: 40%;
+    }
+}
