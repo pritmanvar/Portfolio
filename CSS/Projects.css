@@ -9,7 +9,6 @@
     width: 95%;
     display: flex;
     margin: 20px 0;
-    z-index: -1;
 }
 .projectDetails img{
     aspect-ratio: 194/100;
