@@ -2,9 +2,10 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #BAC3CF;
+    font-family: 'Inconsolata', monospace;
+    color: white;
     height: 10vh;
 }
 footer span{
-    border-right: 1px solid #BAC3CF;
+    border-right: 1px solid white;
 }
