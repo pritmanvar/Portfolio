@@ -11,8 +11,8 @@ nav{
     background-color: #061320;
 }
 nav img{
-    aspect-ratio: 1/1;
     height: 45px;
+    width: 45px;
     margin-left: 20px;
 }
 menu{

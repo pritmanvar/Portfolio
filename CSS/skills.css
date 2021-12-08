@@ -51,7 +51,7 @@
 .iteamCircle{
     background-color: #F14B4B;
     height: 80px;
-    aspect-ratio: 1/1;
+    width: 80px;
     margin: 0 auto 5px auto;
     display: flex;
     justify-content: center;
@@ -61,7 +61,6 @@
 .iteamCircle img{
     transition: 0.5s all linear;
     height: 75%;
-    aspect-ratio: 1/1;
 }
 .iteamCircle:hover > img{
     transform: rotate(360deg);
@@ -104,6 +103,7 @@
     }
     .iteamCircle{
         height: 70px;
+        width: 70px;
     }
 }
 @media only screen and (max-width: 768px) {
@@ -116,7 +116,7 @@
     }
     .skillIteams{
         grid-template-areas: 'iteam4 . iteam5 . iteam3'
-                             '. iteam1 . iteam2 .';
+        '. iteam1 . iteam2 .';
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         margin-top: 20px;
     }
@@ -141,6 +141,7 @@
 @media only screen and (max-width: 425px) {
     .iteamCircle{
         height: 60px;
+        width: 60px;
     }
 }
 @media only screen and (max-width: 375px) {
