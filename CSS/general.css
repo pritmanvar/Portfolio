@@ -23,6 +23,7 @@ a{
     min-height: 100vh;
     width: 80%;
     margin: 0 auto;
+    overflow: hidden;
 }
 .title{
     display: flex;
