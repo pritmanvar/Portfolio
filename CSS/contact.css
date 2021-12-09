@@ -17,6 +17,7 @@
     text-align: center;
     color: #BAC3CF;
     font-weight: 500;
+    z-index: -1;
 }
 .contact .socials{
     display: flex;
